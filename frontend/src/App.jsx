@@ -1,9 +1,13 @@
+import { Outlet } from 'react-router-dom'
 import Header from './components/Header'
+import { Container } from 'react-bootstrap'
 function App() {
   return (
     <>
       <Header />
-      <h1>JWT</h1>
+      <Container className="my-2">
+        <Outlet />
+      </Container>
     </>
   )
 }
