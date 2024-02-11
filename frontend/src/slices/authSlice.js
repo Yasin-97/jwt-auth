@@ -1,5 +1,4 @@
 import { createSlice } from '@reduxjs/toolkit'
-import { json } from 'express'
 
 const initialState = {
   userInfo: localStorage.getItem('userInfo') ? JSON.parse(localStorage.getItem('userInfo')) : null,
